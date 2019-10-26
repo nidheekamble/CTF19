@@ -8,7 +8,13 @@ from sqlalchemy import or_, and_
 from sqlalchemy.orm import Session
 from flask import Flask, session, render_template, url_for, flash, redirect, request, send_from_directory
 from flask_bootstrap import Bootstrap
-from PIL import Image
+import datetime
+from datetime import timedelta
+from functools import wraps
+
+@app.before_request
+def make_session_permanent():
+	session.permanent = True
 
 @app.route("/")
 @app.route("/home", methods = ['GET', 'POST'])
@@ -16,9 +22,16 @@ def home():
 	return render_template('home.html', title='Home')
 
 @app.route("/flag1")
+@session_required
 def flag1():
 	return render_template('flag1.html', title='Flag 1')
 
 @app.route("/chicken")
+@session_required
 def chicken():
 	return render_template('chicken.html', title='Chicken')
+
+@app.route("/stackAnswer")
+@session_required
+def stackAnswer():
+	return render_template('stackAnswer.html', title='How to approach a CTF when you\'re clueless')
