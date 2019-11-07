@@ -22,16 +22,17 @@ def home():
 	return render_template('home.html', title='Home')
 
 @app.route("/flag1")
-@session_required
 def flag1():
 	return render_template('flag1.html', title='Flag 1')
 
 @app.route("/chicken")
-@session_required
 def chicken():
 	return render_template('chicken.html', title='Chicken')
 
 @app.route("/stackAnswer")
-@session_required
 def stackAnswer():
 	return render_template('stackAnswer.html', title='How to approach a CTF when you\'re clueless')
+
+@app.route("/stackoverflow")
+def stackoverflow():
+	return render_template('stackoverflow.html', title='stackoverflow')
