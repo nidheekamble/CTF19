@@ -65,6 +65,11 @@ def cat_image_sender():
     return send_file(os.path.join('static', 'cat.png'), mimetype='image/png')
 
 
+###### YASH
+@app.route("/optimus")
+def optimus():
+    return render_template('optimus.html')
+
 ######### FINALE BEGINS ############### ToDo
 
 #### PART 1: S/O ### Nidhee
@@ -114,7 +119,21 @@ def related8():
 ### PART 2: CODECHEF ### Yash
 @app.route("/codechef")
 def codechef():
-	return render_template('flag1.html', title = 'Codechef')
+	return render_template('codechef.html', title = 'Codechef')
 
+@app.route("/rankings/codechef")
+def rankings_codechef():
+    return redirect("/codechef")
+
+@app.route("/codechef_404")
+def codechef_404():
+	return render_template('codechef_404.html', title = 'Codechef')
+
+@app.route("/rankings/codechef_404")
+def rankings_codechef_404():
+    return redirect("/codechef_404")
 
 ### PART 3: YOUTUBE ### Nidhee 
+@app.route("/abdul_bohot_bhari")
+def abdul_bohot_bhari():
+    return "TODO"
