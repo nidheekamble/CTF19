@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='begin.css') }}">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='finale.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
 <link rel="shortcut icon" href="static/icon.ico">
 
@@ -15,14 +15,15 @@
 </head>
 
 <body>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<br><br><br><br><br><br><br><br><br><br>
 
 	<div class="container valign center-align footer">
-		<br><br><br><br>
+		<h4 class = "grey-text">Good work so far.</h4><h2 class = "white-text"><b>Are you ready?</b></h2>
+		<br><br><br>
 		<div class = "row">
 			<h3><p>
-				<a href="{{ url_for('stackoverflow') }}" class="button-border hoverable waves-effect waves-light btn-large red darken-2 white-text"><b>Proceed to Grand Finale</b></a>
-				<a href="{{ url_for('chicken') }}" class="button-border hoverable waves-effect waves-light btn-large light-blue accent-2 black-text">Enough, I give up.</a>
+				<a href="{{ url_for('stackoverflow') }}" class="button-border hoverable waves-effect waves-light btn-large light-green darken-2 white-text"><b>Proceed to Grand Finale</b></a>
+				<a href="{{ url_for('chicken') }}" class="button-border hoverable waves-effect waves-light btn-large grey darken-3 white-text">Enough, I give up.</a>
 			</h3>
 		</div>
 	</div>
