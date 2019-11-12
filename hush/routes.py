@@ -152,19 +152,9 @@ def abdul_bohot_bhari():
 def nesoacademy():
 	return redirect('https://www.youtube.com/watch?v=cZMpPr5yDeY&feature=youtu.be')
 
-@app.route("http://communityofcoders.pythonanywhere.com/fj8g4c")
-def absolute1():
-	return redirect('https://www.youtube.com/watch?v=cZMpPr5yDeY&feature=youtu.be')
-
-
 @app.route("/2pu34m")
 def abhishekUpmanyu():
 	return redirect('https://www.youtube.com/watch?v=f-6DhT_39B0&feature=youtu.be')
-
-@app.route("http://communityofcoders.pythonanywhere.com/2pu34m")
-def absolute2():
-	return redirect('https://www.youtube.com/watch?v=f-6DhT_39B0&feature=youtu.be')
-
 
 
 ####### FLAG #######
