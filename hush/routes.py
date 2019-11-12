@@ -32,17 +32,17 @@ def start():
 
 ############# HEXDUMP: Ali ################# Added 
 
-@app.route("/MorseIzAwesum") 
+@app.route("/MorseLzAwesum") 
 def cat_ctf():
 	return render_template('cat.html', title='So cute!')
 
-@app.route("/morseizawesum")
+@app.route("/morselzawesum")
 def morseAlt2():
-	return redirect('/MorseIzAwesum')
+	return redirect('/MorseLzAwesum')
 
-@app.route("/MORSEIZAWESUM")
+@app.route("/MORSELZAWESUM")
 def morseAlt3():
-	return redirect('/MorseIzAwesum')
+	return redirect('/MorseLzAwesum')
 
 @app.route("/catImage")
 def cat_image_sender():
@@ -152,9 +152,19 @@ def abdul_bohot_bhari():
 def nesoacademy():
 	return redirect('https://www.youtube.com/watch?v=cZMpPr5yDeY&feature=youtu.be')
 
+@app.route("http://communityofcoders.pythonanywhere.com/fj8g4c")
+def absolute1():
+	return redirect('https://www.youtube.com/watch?v=cZMpPr5yDeY&feature=youtu.be')
+
+
 @app.route("/2pu34m")
 def abhishekUpmanyu():
 	return redirect('https://www.youtube.com/watch?v=f-6DhT_39B0&feature=youtu.be')
+
+@app.route("http://communityofcoders.pythonanywhere.com/2pu34m")
+def absolute2():
+	return redirect('https://www.youtube.com/watch?v=f-6DhT_39B0&feature=youtu.be')
+
 
 
 ####### FLAG #######
