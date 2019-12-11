@@ -15,7 +15,7 @@ For Second Year Students by *Community of Coders*, VJTI, Matunga.
 
 DESCRIPTION
 -----------
-Every page has a flag, which is the name of the next route in the website. The clues are on the page and self-explanatory. Use of the Internet and third-aprty softwares is allowed. 
+Every page has a flag, which is the name of the next route in the website. The clues are on the page and self-explanatory. Use of the Internet and third-party softwares is allowed. 
 <br><br>
 The current version of the CTF is hosted at: <br>
 http://communityocoders.pythonanywhere.com.
